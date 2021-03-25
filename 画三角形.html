@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divs{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 100px;
+            border-color: transparent transparent transparent hotpink;
+        }
+        .div2{
+            width: 0;
+            height: 0;
+            border-top: 100px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="divs"></div>
+    <div class="div2"></div>
+    <label for="hh">lemon</label>
+    <input type="checkbox" name="" id="hh">
+    <label for="aa">purple</label>
+    <input type="checkbox" name="" id="aa">
+</body>
+</html>
+<script>
+    // var total;
+    function add(num) {
+        if(num == 1){
+            return 1
+        };
+        return num+add(num-1)
+    };
+    console.log(add(100));
+    function feibo(n) {
+        if((n==1)||(n==2)){
+            return 1
+        }
+        return feibo(n-1)+feibo(n-2)
+    }
+    console.log(feibo(9));
+</script>
